@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
+  { path: 'admin', component: Admin},
   { path: 'product-gt', component: ProductGTComponent},
   { path: 'product-menu', component: ProductMenuComponent},
   {path: 'product-list', component: ProductListComponent},
