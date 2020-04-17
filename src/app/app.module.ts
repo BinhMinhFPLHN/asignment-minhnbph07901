@@ -10,6 +10,8 @@ import { ProductGTComponent } from './product-gt/product-gt.component';
 import { ProductMenuComponent } from './product-menu/product-menu.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { HomeComponent } from './home/home.component';
+import { AdminComponent } from './admin/admin.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 
@@ -17,7 +19,7 @@ import { HomeComponent } from './home/home.component';
 
 @NgModule({
   imports:      [ AppRoutingModule, BrowserModule, FormsModule, ],
-  declarations: [ AppComponent, HelloComponent, SlideComponent, ProductGTComponent, ProductMenuComponent, ProductListComponent, HomeComponent ],
+  declarations: [ AppComponent, HelloComponent, SlideComponent, ProductGTComponent, ProductMenuComponent, ProductListComponent, HomeComponent, AdminComponent, DashboardComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
