@@ -24,7 +24,7 @@
             ],
             "styles": [
               
-              "srs/css/admin.scss",
+              "src/css/admin.scss",
               "src/styles.scss"
               
             ],
