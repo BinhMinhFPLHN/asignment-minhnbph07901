@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,7 +21,7 @@ import { DashboardManagerComponent } from './dashboard-manager/dashboard-manager
 
 
 @NgModule({
-  imports:      [ AppRoutingModule, BrowserModule, FormsModule, ],
+  imports:      [ AppRoutingModule, BrowserModule, FormsModule,CarouselModule ],
   declarations: [ AppComponent, HelloComponent, SlideComponent, ProductGTComponent, ProductMenuComponent, ProductListComponent, HomeComponent, AdminComponent, DashboardComponent, DashboardManagerComponent ],
   bootstrap:    [ AppComponent ]
 })
