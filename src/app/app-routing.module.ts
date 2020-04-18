@@ -23,7 +23,7 @@ const routes: Routes = [
       ]
   },
   { path: 'product-gt', component: ProductGTComponent},
-  { path: 'product-menu', component: ProductMenuComponent},
+  { path: 'menu', component: ProductMenuComponent},
   {path: 'product-list', component: ProductListComponent},
   
 ];
