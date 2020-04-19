@@ -2,7 +2,7 @@
         id: number;
         name: string;
         price: number;
-        desc: String;
+        desc: string;
         status: boolean;
-        image: String;
+        image: string;
     }
