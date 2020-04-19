@@ -7,6 +7,8 @@ import { data } from '../MockData';
 })
 export class DashboardManagerComponent implements OnInit {
   items = data;
+  page = 1;
+  pageSize = 5;
   constructor() { }
 
   ngOnInit() {
