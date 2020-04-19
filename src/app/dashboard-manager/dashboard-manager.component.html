@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th scope="col">#</th>
+      <th scope="col">Image</th>
       <th scope="col">Product</th>
       <th scope="col">Price</th>
       <th scope="col">Handle</th>
@@ -15,8 +16,10 @@
     <tr>
      <tr *ngFor="let item of items | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
        <td>{{item.id}}</td>
+       <td>{{item.image}}</td>
        <td>{{item.name}}</td>
        <td>{{item.price}}</td>
+       <td>{{item.desc}}</td>
   </tr>
   </tbody>
 </table>

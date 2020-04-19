@@ -4,4 +4,5 @@
         price: number;
         desc: String;
         status: boolean;
+        image: String;
     }
