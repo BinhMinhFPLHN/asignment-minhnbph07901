@@ -1768,5 +1768,17 @@ header .navbar .cta-btn a:hover {
 .flaticon-fish:before { content: "\f103"; }
 .flaticon-meat:before { content: "\f104"; }
 .flaticon-cook:before { content: "\f105"; }
+
+.wrap-icon > span {
+    font-size: 2rem;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 }
 
