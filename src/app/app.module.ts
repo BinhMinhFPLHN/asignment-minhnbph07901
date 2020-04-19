@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardManagerComponent } from './dashboard-manager/dashboard-manager.component';
+import { DashboardAddComponent } from './dashboard-add/dashboard-add.component';
 
 
 
@@ -23,7 +24,7 @@ import { DashboardManagerComponent } from './dashboard-manager/dashboard-manager
 
 @NgModule({
   imports:      [ AppRoutingModule, BrowserModule, FormsModule,CarouselModule, NgbModule ],
-  declarations: [ AppComponent, HelloComponent, SlideComponent, ProductGTComponent, ProductMenuComponent, ProductListComponent, HomeComponent, AdminComponent, DashboardComponent, DashboardManagerComponent ],
+  declarations: [ AppComponent, HelloComponent, SlideComponent, ProductGTComponent, ProductMenuComponent, ProductListComponent, HomeComponent, AdminComponent, DashboardComponent, DashboardManagerComponent, DashboardAddComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }

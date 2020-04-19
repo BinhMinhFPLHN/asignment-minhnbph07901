@@ -7,6 +7,8 @@ import { HomeComponent } from './home/home.component';
 import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardManagerComponent } from './dashboard-manager/dashboard-manager.component';
+import { DashboardAddComponent } from './dashboard-add/dashboard-add.component';
+
 
 
 
@@ -19,7 +21,8 @@ const routes: Routes = [
       children: [
         { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
         { path: 'dashboard', component: DashboardComponent},
-        { path: 'dashboard-manager', component: DashboardManagerComponent}
+        { path: 'dashboard-manager', component: DashboardManagerComponent},
+        { path: 'dashboard-add', component: DashboardAddComponent}
       ]
   },
   { path: 'product-gt', component: ProductGTComponent},
