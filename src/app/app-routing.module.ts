@@ -8,6 +8,7 @@ import { AdminComponent } from './admin/admin.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardManagerComponent } from './dashboard-manager/dashboard-manager.component';
 import { DashboardAddComponent } from './dashboard-add/dashboard-add.component';
+import { ProductComponent } from './product/product.component';
 
 
 
@@ -26,7 +27,7 @@ const routes: Routes = [
       ]
   },
   { path: 'product-gt', component: ProductGTComponent},
-  { path: 'menu', component: ProductMenuComponent},
+  { path: 'menu', component: ProductComponent},
   {path: 'product-list', component: ProductListComponent},
   
 ];
