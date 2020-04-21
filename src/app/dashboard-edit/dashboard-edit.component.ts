@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../product.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Product } from '../Product';
+import { Product } from '../product';
 @Component({
-  selector: 'app-product-edit',
-  templateUrl: './product-edit.component.html',
-  styleUrls: ['./product-edit.component.css']
+  selector: 'app-dashboard-edit',
+  templateUrl: './dashboard-edit.component.html',
+  styleUrls: ['./dashboard-edit.component.css']
 })
 export class ProductEditComponent implements OnInit {
   product: Product;

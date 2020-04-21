@@ -17,7 +17,7 @@ import { DashboardManagerComponent } from './dashboard-manager/dashboard-manager
 import { DashboardAddComponent } from './dashboard-add/dashboard-add.component';
 import { ProductComponent } from './product/product.component';
 import { NewComponent } from './new/new.component';
-import { DashboardEditComponent } from './dashboard-edit/dashboard-edit.component';
+import { DashboardEditComp } from './dashboard-edit/dashboard-edit.component';
 
 
 
