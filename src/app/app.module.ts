@@ -17,6 +17,8 @@ import { DashboardManagerComponent } from './dashboard-manager/dashboard-manager
 import { DashboardAddComponent } from './dashboard-add/dashboard-add.component';
 import { ProductComponent } from './product/product.component';
 import { NewComponent } from './new/new.component';
+import { DashboardEditComponent } from './dashboard-edit/dashboard-edit.component';
+
 
 
 
@@ -26,7 +28,7 @@ import { NewComponent } from './new/new.component';
 
 @NgModule({
   imports:      [ AppRoutingModule, BrowserModule, FormsModule,CarouselModule, NgbModule ],
-  declarations: [ AppComponent, HelloComponent, SlideComponent, ProductGTComponent, ProductMenuComponent, HomeComponent, AdminComponent, DashboardComponent, DashboardManagerComponent, DashboardAddComponent, ProductComponent, NewComponent, ],
+  declarations: [ AppComponent, HelloComponent, SlideComponent, ProductGTComponent, ProductMenuComponent, HomeComponent, AdminComponent, DashboardComponent, DashboardManagerComponent, DashboardAddComponent, ProductComponent, NewComponent, DashboardEditComponent, ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
