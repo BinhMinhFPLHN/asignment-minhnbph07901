@@ -21,11 +21,11 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'admin', component: AdminComponent,
       children: [
-        { path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+        { path: '', redirectTo: 'dashboard-manager', pathMatch: 'full'},
         { path: 'dashboard', component: DashboardComponent},
         { path: 'dashboard-manager', component: DashboardManagerComponent},
         { path: 'dashboard-add', component: DashboardAddComponent},
-        { path: 'dashboard-manager/edit/:productID', component: DashboardEditComponent},
+        { path: 'dashboard-edit', component: DashboardEditComponent},
       ]
   },
   { path: 'product-gt', component: ProductGTComponent},
