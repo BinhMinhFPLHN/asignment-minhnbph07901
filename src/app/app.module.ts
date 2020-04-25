@@ -3,6 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {HttpClientModule} from '@angular/common/http';
+
+import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -27,7 +30,7 @@ import { DashboardEditComponent } from './dashboard-edit/dashboard-edit.componen
 
 
 @NgModule({
-  imports:      [ AppRoutingModule, BrowserModule, FormsModule,CarouselModule, NgbModule ],
+  imports:      [ AppRoutingModule, BrowserModule, FormsModule,CarouselModule, NgbModule, HttpClientModule, ReactiveFormsModule ],
   declarations: [ AppComponent, HelloComponent, SlideComponent, ProductGTComponent, ProductMenuComponent, HomeComponent, AdminComponent, DashboardComponent, DashboardManagerComponent, DashboardAddComponent, ProductComponent, NewComponent, DashboardEditComponent, ],
   bootstrap:    [ AppComponent ]
 })

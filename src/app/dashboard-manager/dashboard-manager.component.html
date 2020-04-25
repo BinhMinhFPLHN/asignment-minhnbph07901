@@ -1,8 +1,5 @@
-<input style="width: 300px;" class="form-control" placeholder="Search for..." type="text" [(ngModel)]="name  " (input)="search()"/>
 <header class="d-flex mb-3 pt-5 justify-content-between">
-  
   <h2>Manager</h2>
-  
   <button class="btn btn-primary" routerLink="/admin/dashboard-add">Add Product</button>
 </header>
 <table class="table table-striped table-dark">
@@ -12,7 +9,7 @@
       <th scope="col">Image</th>
       <th scope="col">Product</th>
       <th scope="col">Price</th>
-      <th scope="col">desc</th>
+      <th scope="col">Handle</th>
     </tr>
   </thead>
   <tbody> 
@@ -20,7 +17,7 @@
        <td>{{product.id}}</td> 
        <td><img  style="width: 100px; height: 70px;" src="{{product.image}}" alt=""></td>
        <td>{{product.name}}</td>
-       <td>${{product.price}}</td>
+       <td>{{product.price}}</td>
        <td>{{product.desc}}</td>
        <td>
             <button class="btn btn-info ml-3" routerLink="/admin/dashboard-edit">Edit</button>
@@ -33,4 +30,4 @@
 <ngb-pagination
   [(page)]="page"
   [pageSize]="pageSize"
-  [collectionSize]="product.length"></ngb-pagination>
+  [collectionSize]="products.length"></ngb-pagination>

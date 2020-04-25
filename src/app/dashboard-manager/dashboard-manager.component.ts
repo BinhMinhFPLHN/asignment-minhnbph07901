@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { data } from '../MockData';
 import { ProductService } from '../product.service';
 import { Product } from '../product';
 @Component({
@@ -7,29 +8,20 @@ import { Product } from '../product';
   styleUrls: ['./dashboard-manager.component.css']
 })
 export class DashboardManagerComponent implements OnInit {
- selected:Product;
-  products:Product[];
+  // product = data;
+  products: Product[];
   page = 1;
   pageSize = 5;
-  name:String;
   constructor(
-    private ProductService : ProductService) { }
+    private productService: ProductService
+  ) { }
 
   ngOnInit() {
 this.getProducts();
   }
 getProducts(){
-    this.ProductService.getProducts().subscribe(Data=>{ this.products=Data})
+    this.productService.getProducts().subscribe(Data=>{ this.products=Data})
     // this.products= this.productService.getProducts();
     
-  }
-
-  removeItem(id){
-    this.ProductService.removeProduct(id).subscribe(response =>{
-      
-      this.products= this.products.filter(product => product.id !==response.id)
-      ;
-    })
-    // this.products= this.products.filter(products => products.id !==id);
   }
 }
