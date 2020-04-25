@@ -24,4 +24,10 @@ getProducts(){
     // this.products= this.productService.getProducts();
     
   }
+   removeItem(id){
+    this.productService.removeProduct(id).subscribe(response =>{
+      
+      this.products= this.products.filter(product => product.id !==response.id)
+      ;
+    })}
 }

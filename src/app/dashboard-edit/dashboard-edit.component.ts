@@ -8,27 +8,34 @@ import { Product } from '../product';
   styleUrls: ['./dashboard-edit.component.css']
 })
 export class DashboardEditComponent implements OnInit {
- product: Product;
+product: Product;
   constructor(
+
     private productService: ProductService,
     private route: ActivatedRoute,
     private router: Router
+
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getProduct();
   }
+
   getProduct(){
     this.route.params.subscribe(param => {
-      this.productService.getProduct(param.productID).subscribe(data => {
-        this.product = data;
+      this.productService.getProduct(param.productID).subscribe(Data => {
+        this.product = Data;
       })
-    })
+    });
   }
 
   updateProduct(){
-   this.productService.updateProduct(this.product).subscribe(data => {
-      this.router.navigateByUrl('/product');
-   })
+    // console.log(this.product);
+    this.productService.updateProduct(this.product).subscribe(Data => {
+      // console.log(Data);
+      this.router.navigateByUrl('admin/quanli');
+    })
   }
+
+
 }

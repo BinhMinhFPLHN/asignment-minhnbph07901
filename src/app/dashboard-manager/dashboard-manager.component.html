@@ -17,11 +17,11 @@
        <td>{{product.id}}</td> 
        <td><img  style="width: 100px; height: 70px;" src="{{product.image}}" alt=""></td>
        <td>{{product.name}}</td>
-       <td>{{product.price}}</td>
+       <td>$ {{product.price}}</td>
        <td>{{product.desc}}</td>
        <td>
-            <button class="btn btn-info ml-3" routerLink="/admin/dashboard-edit">Edit</button>
-            <button class="btn btn-danger ml-3" >Delete</button>
+             <button class="btn btn-info ml-3" routerLink="/admin/product/edit/{{product.id}}">Edit</button>
+             <button class="btn btn-danger ml-3" (click)="removeItem(product.id)">Delete</button>
       </td>
      </tr>
   </tbody>
