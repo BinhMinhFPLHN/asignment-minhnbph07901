@@ -22,10 +22,10 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent,
       children: [
         { path: '', redirectTo: 'dashboard-manager', pathMatch: 'full'},
+        { path: "product/edit/:productID", component: DashboardEditComponent },
         { path: 'dashboard', component: DashboardComponent},
         { path: 'dashboard-manager', component: DashboardManagerComponent},
         { path: 'dashboard-add', component: DashboardAddComponent},
-        { path: 'dashboard-edit', component: DashboardEditComponent},
       ]
   },
   { path: 'product-gt', component: ProductGTComponent},

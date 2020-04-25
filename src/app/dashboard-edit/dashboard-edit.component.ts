@@ -33,7 +33,7 @@ product: Product;
     // console.log(this.product);
     this.productService.updateProduct(this.product).subscribe(Data => {
       // console.log(Data);
-      this.router.navigateByUrl('admin/quanli');
+      this.router.navigateByUrl('admin/dashboard-manager');
     })
   }
 
