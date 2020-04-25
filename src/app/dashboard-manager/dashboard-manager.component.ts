@@ -12,6 +12,7 @@ export class DashboardManagerComponent implements OnInit {
   products: Product[];
   page = 1;
   pageSize = 5;
+  
   constructor(
     private productService: ProductService
   ) { }
@@ -30,4 +31,15 @@ getProducts(){
       this.products= this.products.filter(product => product.id !==response.id)
       ;
     })}
+
+    search(){
+    if(this.name !=""){
+      this.products=this.products.filter(res =>{
+        return res.name.toLocaleLowerCase().match(this.name.toLocaleLowerCase());
+      });
+    }else if(this.name == ""){
+      this.ngOnInit();
+    }
+    
+  }
 }
