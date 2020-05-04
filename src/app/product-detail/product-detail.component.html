@@ -1,12 +1,79 @@
-<div class='styler'>
-<!-- <h1 class="my-4">Chi Tiết Sản Phẩm</h1> -->
-<div class="card mb-3" style="max-width: 700px;"  *ngIf='product'>
+<div class="style">
+	<header role="banner">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="index.html">MingFood</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+				<div class="collapse navbar-collapse" id="navbarsExample05">
+					<ul class="navbar-nav ml-auto pl-lg-5 pl-0">
+						<li class="nav-item">
+							<a class="nav-link"routerLink="" ><span class="menu-title">Home</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link"routerLink="/menu" ><span class="menu-title">Product</span></a>
+						</li>
+            <li class="nav-item">
+							<a class="nav-link"routerLink="/new" ><span class="menu-title">New</span></a>
+						</li>
+					</ul>
+					
+
+				</div>
+			</div>
+		</nav>
+	</header>
+
+  <div class="slider-item" style= "background-image: url('https://studios.vn/wp-content/uploads/2017/06/dich-vu-chup-anh-mon-an-gia-re-tai-ha-noi2.jpg');">
+          
+          <div class="container">
+            <div class="row slider-text align-items-center justify-content-center">
+              <div class="col-md-8 text-center col-sm-12 ">
+                <h1 data-aos="fade-up" class="aos-init aos-animate">Produc Food</h1>
+               
+               
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+<br>
+<br>
+<br>
+
+
+
+<!-- <div class="card mb-3" style="max-width: 700px; margin-left: 40%"   *ngIf='product'>
     <div class="row">
         <div class="col-md-7">
             <img class="img-fluid rounded mb-3 mb-md-0" src="{{product.image}}" alt="">
         </div>
         <div class="col-md-5" style="margin-top: 5 0px;">
-          <h5 class="card-title">Tên sản phẩm : {{product.name}}</h5>
+          <h5 class="card-title">Tên món ăn : {{product.name}}</h5>
+          <br>
+          <h6><p class="card-text"></p> giá : ${{product.price}} VNĐ</h6>
+          <br>
+          <p class="card-text">Mô tả sản phẩm:</p>
+            <p> {{product.desc}}</p>
+        </div>
+      </div>
+  </div> -->
+
+  <section class="section pt-4 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 blog-content">
+            
+            <div class="card mb-3" style="max-width: 700px; margin-left: 40%"   *ngIf='product'>
+    <div class="row">
+        <div class="col-md-7">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="{{product.image}}" alt="">
+        </div>
+        <div class="col-md-5" style="margin-top: 5 0px;">
+          <h5 class="card-title">Tên món ăn : {{product.name}}</h5>
           <br>
           <h6><p class="card-text"></p> giá : ${{product.price}} VNĐ</h6>
           <br>
@@ -15,4 +82,162 @@
         </div>
       </div>
   </div>
+
+
+            <div class="pt-5">
+              <h3 class="mb-5">6 Comments</h3>
+              <ul class="comment-list">
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="img/person_2.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>Jacob Smith</h3>
+                    <div class="meta">January 9, 2018 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+                </li>
+
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="img/person_3.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>Chris Meyer</h3>
+                    <div class="meta">January 9, 2018 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+
+                  <ul class="children">
+                    <li class="comment">
+                      <div class="vcard bio">
+                        <img src="img/person_2.jpg" alt="Image placeholder">
+                      </div>
+                      <div class="comment-body">
+                        <h3>Chintan Patel</h3>
+                        <div class="meta">January 9, 2018 at 2:21pm</div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                        <p><a href="#" class="reply">Reply</a></p>
+                      </div>
+
+
+                      <ul class="children">
+                        <li class="comment">
+                          <div class="vcard bio">
+                            <img src="img/person_1.jpg" alt="Image placeholder">
+                          </div>
+                          <div class="comment-body">
+                            <h3>Jean Doe</h3>
+                            <div class="meta">January 9, 2018 at 2:21pm</div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                            <p><a href="#" class="reply">Reply</a></p>
+                          </div>
+
+                            <ul class="children">
+                              <li class="comment">
+                                <div class="vcard bio">
+                                  <img src="img/person_2.jpg" alt="Image placeholder">
+                                </div>
+                                <div class="comment-body">
+                                  <h3>Ben Afflick</h3>
+                                  <div class="meta">January 9, 2018 at 2:21pm</div>
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                                  <p><a href="#" class="reply">Reply</a></p>
+                                </div>
+                              </li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="comment">
+                  <div class="vcard bio">
+                    <img src="img/person_1.jpg" alt="Image placeholder">
+                  </div>
+                  <div class="comment-body">
+                    <h3>Jean Doe</h3>
+                    <div class="meta">January 9, 2018 at 2:21pm</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quidem laborum necessitatibus, ipsam impedit vitae autem, eum officia, fugiat saepe enim sapiente iste iure! Quam voluptas earum impedit necessitatibus, nihil?</p>
+                    <p><a href="#" class="reply">Reply</a></p>
+                  </div>
+                </li>
+              </ul>
+              <!-- END comment-list -->
+              
+              <div class="comment-form-wrap pt-5">
+                <h3 class="mb-5">Leave a comment</h3>
+                <form action="#" class="">
+                  <div class="form-group">
+                    <label for="name">Name *</label>
+                    <input type="text" class="form-control" id="name">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="website">Website</label>
+                    <input type="url" class="form-control" id="website">
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="" id="message" cols="30" rows="10" class="form-control"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="submit" value="Post Comment" class="btn btn-primary btn-md">
+                  </div>
+
+                </form>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-lg-4 sidebar pl-lg-5">
+            <div class="sidebar-box">
+              <form action="#" class="search-form">
+                <div class="form-group">
+                  <span class="icon fa fa-search"></span>
+                  <input type="text" class="form-control form-control-lg" placeholder="Type a keyword and hit enter">
+                </div>
+              </form>
+            </div>
+            <div class="sidebar-box">
+              <img src="img/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4 w-50 rounded-circle">
+              <h3>About The Author</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+              <p><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
+            </div>
+
+            <div class="sidebar-box">
+              <div class="categories">
+                <h3>Categories</h3>
+                <li><a href="#">Creatives <span>(12)</span></a></li>
+                <li><a href="#">News <span>(22)</span></a></li>
+                <li><a href="#">Design <span>(37)</span></a></li>
+                <li><a href="#">HTML <span>(42)</span></a></li>
+                <li><a href="#">Web Development <span>(14)</span></a></li>
+              </div>
+            </div>
+            
+
+            <div class="sidebar-box">
+              <h3>Paragraph</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <br>
+  <br>
+  <br>
+
+
+  
 </div>
