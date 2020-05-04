@@ -10,6 +10,7 @@ import { Product } from '../product';
 export class DashboardManagerComponent implements OnInit {
   // product = data;
   products: Product[];
+  name: string;
   page = 1;
   pageSize = 5;
   
@@ -32,14 +33,4 @@ getProducts(){
       ;
     })}
 
-    search(){
-    if(this.name !=""){
-      this.products=this.products.filter(res =>{
-        return res.name.toLocaleLowerCase().match(this.name.toLocaleLowerCase());
-      });
-    }else if(this.name == ""){
-      this.ngOnInit();
-    }
-    
-  }
 }

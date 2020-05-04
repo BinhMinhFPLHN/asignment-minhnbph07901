@@ -64,8 +64,7 @@
         </div>
       </div>
 
-      <div class="container">
-        
+      <!-- <div class="container">
         <div class="row no-gutters">
           <div class="col-md-6">
             <div *ngFor="let product of products" class="sched d-block d-lg-flex">
@@ -78,9 +77,32 @@
               
             </div>
           </div>
+        </div> 
+      </div> -->
+
+
+ <div class="container">
+
+    
+    <div class="row">
+      <div  *ngFor="let product of products" class="col-md-4 mb-5">
+        <div class="card h-100">
+          <img class="card-img-top" style="width: 348px ; height: 232px" src="{{product.image}}"  alt="">
+          <div class="card-body">
+            <h3><a routerLink="/product-detail/{{product.id}}"> {{product.name}}</a></h3>
+            <p class="card-text">{{product.desc}}</p>
+          </div>
+          <div class="card-footer">
+            <p class="card-text"><small class="text-muted">${{product.price}}</small></p>
+          </div>
         </div>
       </div>
       
+     
+    </div>
+  
+
+  </div>
 
            
     </section> <!-- .section -->

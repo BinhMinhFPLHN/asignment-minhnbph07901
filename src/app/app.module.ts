@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {HttpClientModule} from '@angular/common/http';
+import {Ng2SearchPipeModule} from 'ng2-search-filter';
 
 import {ReactiveFormsModule} from '@angular/forms';
 
@@ -30,8 +31,9 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
 
 
 
+
 @NgModule({
-  imports:      [ AppRoutingModule, BrowserModule, FormsModule,CarouselModule, NgbModule, HttpClientModule, ReactiveFormsModule ],
+  imports:      [ AppRoutingModule, BrowserModule, Ng2SearchPipeModule, FormsModule,CarouselModule, NgbModule, HttpClientModule, ReactiveFormsModule ],
   declarations: [ AppComponent, HelloComponent, SlideComponent, ProductGTComponent, ProductMenuComponent, HomeComponent, AdminComponent, DashboardComponent, DashboardManagerComponent, DashboardAddComponent, ProductComponent, NewComponent, DashboardEditComponent, ProductDetailComponent, ],
   bootstrap:    [ AppComponent ]
 })
