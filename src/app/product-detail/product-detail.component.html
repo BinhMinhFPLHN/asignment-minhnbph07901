@@ -63,26 +63,29 @@
   </div> -->
 
   <section class="section pt-4 bg-light">
+
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 blog-content">
-            
-            <div class="card mb-3" style="max-width: 700px; margin-left: 40%"   *ngIf='product'>
-    <div class="row">
-        <div class="col-md-7">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="{{product.image}}" alt="">
-        </div>
-        <div class="col-md-5" style="margin-top: 5 0px;">
-          <h5 class="card-title">Tên món ăn : {{product.name}}</h5>
-          <br>
-          <h6><p class="card-text"></p> giá : ${{product.price}} VNĐ</h6>
-          <br>
-          <p class="card-text">Mô tả sản phẩm:</p>
-            <p> {{product.desc}}</p>
-        </div>
-      </div>
-  </div>
+          <div class="col-lg-9 blog-content">
 
+
+             <div class="col-lg-9">
+ 
+        <div class="card mt-4" >
+          <img class="card-img-top img-fluid" src="{{product.image}}" alt="">
+          <div class="card-body">
+            <h3 class="card-title">Tên món ăn : {{product.name}}</h3>
+            <h4> giá : ${{product.price}}</h4>
+            <p class="card-text">Mô tả món ăn: {{product.desc}}</p>
+            
+            
+          </div>
+        </div>
+    
+
+      </div>
+            
+        
 
             <div class="pt-5">
               <h3 class="mb-5">3 Comments</h3>
@@ -92,7 +95,7 @@
                     <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/95479091_911129516014515_6859175883970707456_o.jpg?_nc_cat=110&_nc_sid=09cbfe&_nc_ohc=ADDYtKDHmlYAX99nXX8&_nc_ht=scontent.fhan2-4.fna&oh=4839151e488e6662ea648d4a6900478d&oe=5ED6A6E2" alt="Image placeholder">
                   </div>
                   <div class="comment-body">
-                    <h3>Lực gâu gâu</h3>
+                    <h3>Lực gâu gâu </h3>
                     <div class="meta">January 9, 2018 at 2:21pm</div>
                     <p>Ngon đấy!!!</p>
                     
@@ -101,7 +104,7 @@
 
                 <li class="comment">
                   <div class="vcard bio">
-                    <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.0-9/89016961_647224799368478_8820268100332027904_o.jpg?_nc_cat=111&_nc_sid=8bfeb9&_nc_ohc=B8Wx34vFmFsAX94FYXm&_nc_ht=scontent.fhan2-1.fna&oh=e38109e34eead7f249afe924b43099d9&oe=5ED59410" alt="Image placeholder">
+                    <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.0-9/49140153_370499193707708_3366077676463849472_o.jpg?_nc_cat=109&_nc_sid=a4a2d7&_nc_ohc=-c7gJtQz5fIAX_K1sBZ&_nc_ht=scontent.fhan2-4.fna&oh=74e7d5e66068302e1cca56f79c0eb3bb&oe=5ED499AB" alt="Image placeholder">
                   </div>
                   <div class="comment-body">
                     <h3>Phước ngáo</h3>
@@ -161,16 +164,9 @@
 
           </div>
           <div class="col-lg-4 sidebar pl-lg-5">
+            
             <div class="sidebar-box">
-              <form action="#" class="search-form">
-                <div class="form-group">
-                  <span class="icon fa fa-search"></span>
-                  <input type="text" class="form-control form-control-lg" placeholder="Type a keyword and hit enter">
-                </div>
-              </form>
-            </div>
-            <div class="sidebar-box">
-              <img src="img/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4 w-50 rounded-circle">
+             
               <h3>About The Author</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
               <p><a href="#" class="btn btn-primary btn-sm">Read More</a></p>
