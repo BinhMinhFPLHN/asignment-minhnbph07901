@@ -68,108 +68,21 @@
         
         <div class="row no-gutters">
           <div class="col-md-6">
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('https://bizweb.dktcdn.net/thumb/large/100/227/495/products/suon-cuu-uc-kieu-phap.jpg?v=1510806493263');" data-aos="fade"></div>
+            <div *ngFor="let product of products" class="sched d-block d-lg-flex">
+              <div class="bg-image order-2"><img src="{{product.image}}" width="300px" alt=""></div>
               <div class="text order-1">
-                <h3>Sườn cừu Úc</h3>
-                <p>Phần sườn hảo hạn trên những chú cừu được nuôi dưỡng chất lượng cao</p>
-                <p class="text-primary h3">$53.00</p>
+                <h3><a routerLink="/product-detail/{{product.id}}"> {{product.name}}</a></h3>
+                <p>{{product.desc}}</p>
+                <p class="text-primary h3">${{product.price}}</p>
               </div>
               
             </div>
-
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('https://cdn.pastaxi-manager.onepas.vn/content/uploads/articles/dungtv/anh-bo-suu-tap/top-10-nha-hang-mon-au-ngon-noi-tieng-nhat-o-hcm/top-10-nha-hang-mon-au-ngon-noi-tieng-nhat-o-tphcm-3.jpg');" data-aos="fade"></div>
-              <div class="text">
-                <h3>Cá hồi sốt chanh leo</h3>
-                <p>Chọn lựa từ những con cá hồi Nauy đạt chuẩn chất lượng</p>
-                <p class="text-primary h3">$22.00</p>
-                
-              </div>
-              
-            </div>
-
-          </div>
-
-          <div class="col-md-6">
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('https://beptruong.edu.vn/wp-content/uploads/2016/07/mon-bo-bit-tet.jpg');" data-aos="fade"></div>
-              <div class="text order-1">
-                <h3>Beefsteak Mỹ hảo hạn</h3>
-                <p>Với phần thịt mềm tươi từ những con bò nhập trực tiếp tại Mỹ</p>
-                <p class="text-primary h3">$25.00</p>
-                
-              </div>
-              
-            </div>
-
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('https://media.foody.vn/res/g79/785384/prof/s/foody-upload-api-foody-mobile-pizzasdasdasdasdasd--181009152252.jpg');" data-aos="fade"></div>
-              <div class="text">
-                <h3>Pizza Đông Lào</h3>
-                <p>Một món ăn với chất lượng hàng đàu thế giới</p>
-                <p class="text-primary h3">$999</p>
-                
-              </div>
-              
-            </div>
-
           </div>
         </div>
-
-        <div class="row no-gutters">
-          <div class="col-md-6">
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('https://beptruong.edu.vn/wp-content/uploads/2016/10/salad-ca-hoi.jpg');" data-aos="fade"></div>
-              <div class="text order-1">
-                <h3>Salad cá hồi </h3>
-                <p>Vẫn từ thịt cá hồi tươi Nauy trộn lẫn với rau củ từ bắc Âu</p>
-                <p class="text-primary h3">$19.00</p>
-              </div>
-              
-            </div>
-
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('https://cdn.nguyenkimmall.com/images/companies/_1/Content/tin-tuc/nha-bep/vao-bep/tat-tan-tat-ve-cach-lam-banh-flan-vang-min-vua-nhin-da-me-me-lam-mot-lan-la-thanh-cong-01.jpg');" data-aos="fade"></div>
-              <div class="text">
-                <h3>Bánh plan vị đặc biệt</h3>
-                <p>Mang trong mình một hương vị ngọt ngào của tình yêu...</p>
-                <p class="text-primary h3">$10.00</p>
-                
-              </div>
-              
-            </div>
-
-          </div>
-
-          <div class="col-md-6">
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image order-2" style="background-image: url('https://daynauan.info.vn/wp-content/uploads/2018/03/mi-y-chay.jpg');" data-aos="fade"></div>
-              <div class="text order-1">
-                <h3>Mỳ Spaghetti</h3>
-                <p>Với sợi mỳ nhập tại Ý kèm theo sót cà chua Pháp  </p>
-                <p class="text-primary h3">$18.00</p>
-                
-              </div>
-              
-            </div>
-
-            <div class="sched d-block d-lg-flex">
-              <div class="bg-image" style="background-image: url('https://www.bb-bergen.com/wp-content/uploads/2019/04/ga-cuon-pho-mai-that-gion-600x300.jpg" alt="Free website template by Free-Template.co');" data-aos="fade"></div>
-              <div class="text">
-                <h3>Món đặc biệt giấu tên</h3>
-                <p>Món ăn đậm chất tây âu chỉ có vào những dịp đặc biệt</p>
-                <p class="text-primary h3">$50.00</p>
-                
-              </div>
-              
-            </div>
-
-          </div>
-        </div>
-        
-
       </div>
+      
+
+           
     </section> <!-- .section -->
 
   <footer class="site-footer" role="contentinfo">

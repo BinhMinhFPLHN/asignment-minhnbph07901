@@ -10,6 +10,7 @@ import { DashboardAddComponent } from './dashboard-add/dashboard-add.component';
 import { ProductComponent } from './product/product.component';
 import { NewComponent } from './new/new.component';
 import { DashboardEditComponent } from './dashboard-edit/dashboard-edit.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 
 
@@ -22,12 +23,13 @@ const routes: Routes = [
   { path: 'admin', component: AdminComponent,
       children: [
         { path: '', redirectTo: 'dashboard-manager', pathMatch: 'full'},
-        { path: "product/edit/:productID", component: DashboardEditComponent },
+        { path: "product/edit/:productID", component: DashboardEditComponent },       
         { path: 'dashboard', component: DashboardComponent},
         { path: 'dashboard-manager', component: DashboardManagerComponent},
         { path: 'dashboard-add', component: DashboardAddComponent},
       ]
   },
+  { path: "product-detail/:productID", component: ProductDetailComponent },
   { path: 'product-gt', component: ProductGTComponent},
   { path: 'new', component: NewComponent},
   { path: 'menu', component: ProductComponent},
